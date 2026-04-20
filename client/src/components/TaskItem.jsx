@@ -26,7 +26,7 @@ export default function TaskItem({ task, onDelete, onUpdate }) {
         borderRadius: 8,
       }}
     >
-      <h3>{task.title}</h3>
+      <p>{task.title}</p>
 
       <p>{task.description || "No description"}</p>
 
