@@ -28,7 +28,7 @@ export default function TaskForm({ onTaskAdded }) {
 
   return (
     <form onSubmit={handleSubmit} style={{ marginBottom: 20 }}>
-      <h2>Create Task</h2>
+      <p>Create Task</p>
 
       <input
         style={{ display: "block", marginBottom: 10, width: "100%" }}

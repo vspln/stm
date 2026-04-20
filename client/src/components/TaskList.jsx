@@ -3,7 +3,7 @@ import TaskItem from "./TaskItem";
 export default function TaskList({ tasks, onDelete, onUpdate }) {
   return (
     <div style={{ marginTop: 20 }}>
-      <h2>Tasks</h2>
+      <p>Tasks</p>
 
       {tasks.length === 0 ? (
         <p>No tasks yet</p>
