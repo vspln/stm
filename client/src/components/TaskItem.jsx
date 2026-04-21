@@ -26,12 +26,14 @@ export default function TaskItem({ task, onDelete, onUpdate }) {
         borderRadius: 8,
       }}
     >
-      <p>{task.title}</p>
+      <p>Title: {task.title}</p>
 
-      <p>{task.description || "No description"}</p>
+      <p>Description: {task.description || "No description"}</p>
 
       {task.summary && (
-        <p style={{ fontStyle: "italic", color: "#555" }}>🧠 {task.summary}</p>
+        <p style={{ fontStyle: "italic", color: "#555" }}>
+          Summary: {task.summary}
+        </p>
       )}
 
       <p>
@@ -39,14 +41,14 @@ export default function TaskItem({ task, onDelete, onUpdate }) {
         <span
           style={{
             color: getPriorityColor(task.priority),
-            fontWeight: "bold",
+            // fontWeight: "bold",
           }}
         >
           {formatPriority(task.priority)}
         </span>
       </p>
 
-      <p>Status: {task.completed ? "✅ Done" : "⏳ Pending"}</p>
+      <p>Status: {task.completed ? "Done" : "Pending"}</p>
 
       <button
         style={{ marginRight: 10 }}
